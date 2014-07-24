@@ -1,0 +1,10 @@
+<div class="jumbotron text-center">
+	<h1>Add Image to DataBase</h1>
+  <div flow-init="{target: '/upload'}"flow-files-submitted="$flow.upload()">
+    <span ng-if="!showbutton" class="btn btn-lg btn-success" flow-btn ng-click="buttonPress()">Choose JPEG</span>
+    <img flow-img="$flow.files[0]" />
+  </div>
+  <br>
+  <a ng-if="showbutton" class="btn btn-lg btn-success" ng-click="update()">Upload to Database</a>
+</div>
+

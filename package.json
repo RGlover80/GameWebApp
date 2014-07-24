@@ -1,0 +1,11 @@
+{
+	"name":"GameWebApp",
+	"main":"server.js",
+	"dependencies": {
+		"express":"~3.5.0",
+		"mongoose":"~3.6.13"
+	},
+  	"engines": {
+    	"node": "0.10.x"
+  	}
+}
