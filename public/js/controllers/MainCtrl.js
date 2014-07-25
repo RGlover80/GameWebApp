@@ -2,7 +2,6 @@
 
 angular.module('MainCtrl', []).controller('MainController', function($scope, $http) {
 
-	$scope.tagline = 'To the moon and back!';
    // Get images from the database
 	 $http({method: 'GET', url: '/api/images'}).
     success(function(data, status, headers, config) {
